@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Encryptor.Front;
+using System;
 using System.Windows.Forms;
-using Encryptor.Front;
 
 namespace Encryptor
 {
