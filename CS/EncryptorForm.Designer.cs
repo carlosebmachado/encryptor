@@ -1,6 +1,6 @@
-﻿namespace Encryptor.Front
+﻿namespace Encryptor
 {
-    partial class EncryptorApp
+    partial class EncryptorForm
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EncryptorApp));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EncryptorForm));
             this.btnEncrypt = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.btnDecrypt = new System.Windows.Forms.Button();
@@ -188,7 +188,7 @@
             this.txtKeyDecrypt.TabIndex = 0;
             this.txtKeyDecrypt.UseSystemPasswordChar = true;
             // 
-            // EncryptorApp
+            // EncryptorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -199,11 +199,11 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "EncryptorApp";
+            this.Name = "EncryptorForm";
             this.Padding = new System.Windows.Forms.Padding(8);
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CC Encryptor";
+            this.Text = "Encryptor";
             this.tabControl.ResumeLayout(false);
             this.tpEncrypt.ResumeLayout(false);
             this.tpEncrypt.PerformLayout();

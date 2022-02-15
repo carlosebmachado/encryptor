@@ -1,9 +1,9 @@
 ﻿using System.IO;
 using System.Security.Cryptography;
 
-namespace Encryptor.Back
+namespace Encryptor
 {
-    public class CryptographyControl
+    public class Cryptography
     {
         public static byte[] Encrypt(byte[] data, byte[] key, byte[] initVector)
         {
@@ -30,7 +30,14 @@ namespace Encryptor.Back
             CryptoStream cryptoStream = new CryptoStream(memoryStream, decryptor, CryptoStreamMode.Write);
 
             cryptoStream.Write(data, 0, data.Length);
-            cryptoStream.FlushFinalBlock();
+            try
+            {
+                cryptoStream.FlushFinalBlock();
+            }
+            catch
+            {
+                return null;
+            }
             unencryptedData = memoryStream.ToArray();
 
             algorithm.Dispose();

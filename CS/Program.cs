@@ -1,5 +1,4 @@
-﻿using Encryptor.Front;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace Encryptor
@@ -14,7 +13,7 @@ namespace Encryptor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EncryptorApp());
+            Application.Run(new EncryptorForm());
         }
     }
 }
