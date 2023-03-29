@@ -17,15 +17,7 @@ This is a simple encryptor program built using C# and Windows Forms. The program
 1. Click on "Decrypt" button to open a file menu to choose a file to decrypt
 1. Click on "Open" in the file meu and it will decrypt the file and request to save the decrypted file
 
-## C#
+## Technologies Used
+- C#
 - Windows Forms
-- .NET Framework
 - AES Encryption Algorithm
-
-Future Improvements
-Some potential improvements for the encryptor program include:
-
-Integration with external services for key management and storage
-Addition of more encryption algorithms
-User interface improvements, such as a more intuitive input and output display
-Integration with other encryption tools or programs for a more comprehensive security suite
